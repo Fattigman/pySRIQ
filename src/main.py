@@ -52,15 +52,9 @@ def runSRIQ(studyName, studyPath, inFileName, outPath, **args):
 
 
 
-test_input = {
-    "studyName":"LU_LUAD_SRIQ",
-    "studyPath":"/Users/jacobkarlstrom/Projects/pySRIQ/",
-    "inFileName":"GeneData_AC_fpkm_mc_log2_nz",
-    "outPath":"/Users/jacobkarlstrom/Projects/pySRIQ/sriq_output/",
-}
 if __name__ == "__main__":
     try: 
-        runSRIQ(**test_input)
+        runSRIQ()
     except TypeError as e:
         print(e)
         print("Make sure to include all the required arguments")
